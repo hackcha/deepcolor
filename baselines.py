@@ -34,7 +34,7 @@ if upsplash:
     train_data_dir = "data/images/Train/"
     result_dir = "data/result/"
 else:
-    model_dir = 'comic_k'
+    model_dir = 'manga'
     test_data_dir = "imgs/"
     train_data_dir = "imgs/"
     result_dir = "results/"
@@ -538,13 +538,6 @@ if __name__ == '__main__':
             elif cmd == 'rgb':
                 rgb_main( trainit=True, cont=False)
     else:
-        # rgb_gan_main( trainit= True, cont = False)
-        rgb_gan_main_keras_tf( trainit= True, cont = False)
-        # load_img_test( )
-        # img = utils.get_image('./data/cm.jpg',
-        #                 target_size=(img_size, img_size))
-        # print(img.dtype)
-        # cv2.imshow('image', ((img/255.0)*255.0).astype(np.uint8) )
-        # cv2.waitKey(0)
-        # cv2.destroyAllWindows()
+        rgb_gan_main( trainit= True, cont = False)
+        # rgb_gan_main_keras_tf( trainit= True, cont = False)
     print('done.')
